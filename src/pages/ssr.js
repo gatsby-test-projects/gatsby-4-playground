@@ -1,5 +1,5 @@
 import React from "react"
-import fetch from "isomorphic-fetch"
+import fetch from "node-fetch"
 
 function UsingSsr({ serverData }) {
   return (

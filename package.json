@@ -24,11 +24,11 @@
     "gatsby-source-filesystem": "alpha-9689ff",
     "gatsby-transformer-remark": "alpha-9689ff",
     "gatsby-transformer-sharp": "alpha-9689ff",
-    "isomorphic-fetch": "^3.0.0",
     "prismjs": "^1.24.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "sharp": "^0.29.1",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
