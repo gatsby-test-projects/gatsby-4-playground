@@ -1,10 +1,12 @@
 import React from "react"
 import fetch from "node-fetch"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 function UsingSsr({ serverData }) {
   return (
     <main>
+      <Link to="/">Back</Link>
       <StaticImage
         placeholder="blurred"
         src="../images/ron-swanson.jpeg"
@@ -13,6 +15,10 @@ function UsingSsr({ serverData }) {
         layout="fullWidth"
       />
       <p class="ron-quote">{serverData.quote}</p>
+      <p class="info">
+        Every time you refresh this page, you'll get a new unaffected quote from
+        Ron
+      </p>
     </main>
   )
 }
