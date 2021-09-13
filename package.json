@@ -10,6 +10,7 @@
   "dependencies": {
     "gatsby": "alpha-9689ff",
     "gatsby-plugin-feed": "alpha-9689ff",
+    "gatsby-plugin-gatsby-cloud": "alpha-9689ff",
     "gatsby-plugin-google-analytics": "alpha-9689ff",
     "gatsby-plugin-image": "alpha-9689ff",
     "gatsby-plugin-manifest": "alpha-9689ff",
