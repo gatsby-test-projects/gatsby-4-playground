@@ -32,7 +32,7 @@ export async function getServerData() {
   ).then(res => res.json())
 
   return {
-    props: data,
+    props: await data,
   }
 }
 
