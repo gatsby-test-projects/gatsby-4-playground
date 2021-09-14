@@ -23,7 +23,7 @@ function RonQuotes({ serverData }) {
 }
 
 export async function getServerData() {
-  const { default: fetch } = require("node-fetch")
+  const { default: fetch } = require("isomorphic-fetch")
 
   return {
     props: {
