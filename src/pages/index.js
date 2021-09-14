@@ -29,10 +29,14 @@ const BlogIndex = ({ data, location }) => {
       <Bio />
       <ul>
         <li>
-          <Link to="/RonQuotes/">Show me some server side rendering, man!</Link>
+          <Link to="/RonQuotes/">
+            Show me some server side rendering with Link, man!
+          </Link>
         </li>
         <li>
-          <a href="/RonQuotes/">Show me some server side rendering, man!</a>
+          <a href="/RonQuotes/">
+            Show me some server side rendering with href, man!
+          </a>
         </li>
       </ul>
       <ol style={{ listStyle: `none` }}>
