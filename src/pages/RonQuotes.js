@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
-require("isomorphic-unfetch")
+require("isomorphic-fetch")
 
 
 function RonQuotes({ serverData }) {
