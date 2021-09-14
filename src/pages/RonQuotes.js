@@ -3,7 +3,7 @@ import fetch from "node-fetch"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-function UsingSsr({ serverData }) {
+function RonQuotes({ serverData }) {
   return (
     <main>
       <Link to="/">Back</Link>
@@ -24,16 +24,13 @@ function UsingSsr({ serverData }) {
 }
 
 export async function getServerData() {
-  const data = await fetch(`https://dog.ceo/api/breeds/image/random`).then(
-    res => res.json()
-  )
-  data.quote = await fetch(
-    `https://ron-swanson-quotes.herokuapp.com/v2/quotes`
-  ).then(res => res.json())
-
   return {
-    props: await data,
+    props: {
+      quote: await fetch(
+        `https://ron-swanson-quotes.herokuapp.com/v2/quotes`
+      ).then(res => res.json()),
+    },
   }
 }
 
-export default UsingSsr
+export default RonQuotes
