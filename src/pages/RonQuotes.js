@@ -2,6 +2,8 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
+require("isomorphic-fetch")
+
 function RonQuotes({ serverData }) {
   return (
     <main>
@@ -23,8 +25,6 @@ function RonQuotes({ serverData }) {
 }
 
 export async function getServerData() {
-  const { default: fetch } = require("isomorphic-fetch")
-
   return {
     props: {
       quote: await fetch(
