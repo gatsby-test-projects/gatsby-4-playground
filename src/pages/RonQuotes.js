@@ -1,5 +1,4 @@
 import React from "react"
-import fetch from "node-fetch"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
@@ -24,6 +23,8 @@ function RonQuotes({ serverData }) {
 }
 
 export async function getServerData() {
+  const { default: fetch } = require("node-fetch")
+
   return {
     props: {
       quote: await fetch(
