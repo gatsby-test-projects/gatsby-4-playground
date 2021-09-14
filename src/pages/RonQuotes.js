@@ -1,6 +1,8 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+require("isomorphic-unfetch")
+
 
 function RonQuotes({ serverData }) {
   return (
@@ -23,7 +25,6 @@ function RonQuotes({ serverData }) {
 }
 
 export async function getServerData() {
-  const { default: fetch } = require("node-fetch")
 
   return {
     props: {
