@@ -20,6 +20,7 @@ function RonQuotes({ serverData }) {
         Every time you refresh this page, you'll get a new unaffected quote from
         Ron
       </p>
+      <p>{serverData.random}</p>
     </main>
   )
 }
@@ -30,6 +31,7 @@ export async function getServerData() {
       quote: await fetch(
         `https://ron-swanson-quotes.herokuapp.com/v2/quotes`
       ).then(res => res.json()),
+      random: Math.random(),
     },
   }
 }
