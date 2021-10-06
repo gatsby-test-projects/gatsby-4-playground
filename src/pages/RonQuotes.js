@@ -26,6 +26,9 @@ function RonQuotes({ serverData }) {
 }
 
 export async function getServerData() {
+  throw new Error(
+    "forcing an error to make sure telemetry is logging SSR errors!"
+  )
   return {
     props: {
       quote: await fetch(
